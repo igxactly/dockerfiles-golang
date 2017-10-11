@@ -95,7 +95,7 @@ for version in "${versions[@]}"; do
 			travisEnv='\n  - VERSION='"$version VARIANT=$variant$travisEnv"
 		fi
 	done
-	for variant in stretch jessie wheezy; do
+	for variant in stretch jessie wheezy xenial zesty; do
 		if [ -d "$version/$variant" ]; then
 			sed -r \
 				-e 's!%%VERSION%%!'"$fullVersion"'!g' \

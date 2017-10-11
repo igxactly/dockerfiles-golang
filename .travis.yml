@@ -2,8 +2,12 @@ language: bash
 services: docker
 
 env:
+  - VERSION=1.9 VARIANT=zesty
+  - VERSION=1.9 VARIANT=xenial
   - VERSION=1.9 VARIANT=stretch
   - VERSION=1.9 VARIANT=alpine3.6
+  - VERSION=1.8 VARIANT=zesty
+  - VERSION=1.8 VARIANT=xenial
   - VERSION=1.8 VARIANT=jessie
   - VERSION=1.8 VARIANT=stretch
   - VERSION=1.8 VARIANT=alpine3.6
